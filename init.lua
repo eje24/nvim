@@ -110,6 +110,17 @@ vim.diagnostic.config {
 }
 
 require('lazy').setup({
+    {
+    "yorickpeterse/nvim-window",
+    keys = {
+      {
+        "<leader>w",
+        "<cmd>lua require('nvim-window').pick()<cr>",
+        desc = "nvim-window: Jump to window"
+      }
+    },
+    config = true,
+  },
   { import = 'custom.plugins' },
   { import = 'custom.themes' },
 }, {})

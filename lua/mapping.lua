@@ -54,8 +54,8 @@ M.set_mappings {
       end
       , desc = "Quit"
     },
-    [","] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" },
-    ["="] = {
+    ["fw"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" },
+    ["ff"] = {
       function() require("telescope.builtin").find_files { hidden = true, no_ignore = true } end,
       desc = "Find all files",
     },
@@ -178,8 +178,10 @@ M.set_mappings {
     -- window management & navigation
     ["\\"] = { "<C-w>v", desc = "Vertical Split" },
     ["-"] = { "<C-w>s", desc = "Horizontal Split" },
-
-
+    ["w"] = {
+		function() require("nvim-window").pick() end,
+        desc = "pick window"
+    },
 
     ['<C-Left>'] = { function() require('smart-splits').resize_left() end, desc = "resize_left" },
     ['<C-Down>'] = { function() require('smart-splits').resize_down() end, desc = "resize_down" },
