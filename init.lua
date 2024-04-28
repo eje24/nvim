@@ -82,7 +82,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 vim.api.nvim_create_autocmd('WinEnter', {
   pattern = '*',
-  command = 'setlocal winfixheight winfixwidth',
+  command = 'setlocal winfixheight',
 })
 
 require 'mapping'
