@@ -17,6 +17,7 @@ return {
   },
   config = function()
     local cmp = require 'cmp'
+    local compare = require 'cmp.config.compare'
     local luasnip = require 'luasnip'
 
     local border_opts = {
@@ -109,6 +110,8 @@ return {
       preselect = cmp.PreselectMode.First,
       sorting = {
         comparators = {
+          compare.offset,
+          compare.exact,
           lspkind_comparator {
             kind_priority = {
               Class = 12,
