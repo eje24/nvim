@@ -322,7 +322,6 @@ M.set_mappings {
     },
 
     -- Opening terminals
-<<<<<<< HEAD
     ["<C-t>"] = { "<cmd>:terminal<cr>" },
     ["t"] = { ":terminal<cr>a" },
 
@@ -338,47 +337,7 @@ M.set_mappings {
     ['<C-Down>'] = { function() require('smart-splits').resize_down() end, desc = "resize_down" },
     ['<C-Up>'] = { function() require('smart-splits').resize_up() end, desc = "resize_up" },
     ['<C-Right>'] = { function() require('smart-splits').resize_right() end, desc = "resize_right" },
-=======
-    ['<C-t>'] = { '<cmd>:terminal<cr>' },
-    ['t'] = { ':25split | terminal<cr>a' },
-    ['T'] = { '<C-w>v<cmd>:terminal<cr>a' },
-    ['<leader>db'] = {
-      function()
-        local current_file = vim.fn.expand '%:t:r'
-        vim.api.nvim_command(':15split | terminal echo ' .. current_file .. '.py | entr -r -c sh -c \'echo "-- ENTR --"; python ' .. current_file .. ".py'")
-      end,
-      desc = 'debug',
-    },
 
-    -- window management & navigation
-    ['\\'] = { '<C-w>v', desc = 'Vertical Split' },
-    ['-'] = { '<C-w>s', desc = 'Horizontal Split' },
-
-    ['<C-Left>'] = {
-      function()
-        require('smart-splits').resize_left()
-      end,
-      desc = 'resize_left',
-    },
-    ['<C-Down>'] = {
-      function()
-        require('smart-splits').resize_down()
-      end,
-      desc = 'resize_down',
-    },
-    ['<C-Up>'] = {
-      function()
-        require('smart-splits').resize_up()
-      end,
-      desc = 'resize_up',
-    },
-    ['<C-Right>'] = {
-      function()
-        require('smart-splits').resize_right()
-      end,
-      desc = 'resize_right',
-    },
->>>>>>> 420298a (formatting mapping)
     -- moving between splits
     ['<C-h>'] = {
       function()
@@ -445,6 +404,7 @@ M.set_mappings {
   },
   i = {
     ['<C-d><C-b>'] = { 'import ipdb; ipdb.set_trace(context=5)', desc = 'debug' },
+<<<<<<< HEAD
     ['<C-p>'] = {
       '<esc>ggoimport pandas as pd<enter>import numpy as np<enter>import pyarrow as pa<enter>import fio.delta as delta<esc><C-o>i',
       desc = 'import the typicals',
@@ -455,12 +415,12 @@ M.set_mappings {
       end,
       desc = 'Format buffer',
     },
+=======
+>>>>>>> c5c916e (/remove unused)
     ['<C-s>'] = { '<cmd>:w<cr>', desc = 'Save file' },
-    ['<C-z>'] = { '<cmd>u<cr>', desc = 'Undo' },
     ['<C-;>'] = { '<cmd>:HopWord<cr>', desc = 'Hop' },
     ['<C-e>'] = { '<esc>ldwi', desc = 'Erase word' },
     ['<C-v>'] = { '<esc>pi', desc = 'Paste' },
-    ['<C-a>'] = { '<esc>ggVG', desc = 'Select all' },
   },
   v = {
     ['<leader>/'] = {
