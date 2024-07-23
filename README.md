@@ -1,5 +1,5 @@
-# Allen's Neovim Config
-Focuses on getting the most done with the least keystrokes, with soothing and minimalist aesthetics.
+# Ezra's Neovim Config
+Forked from [Allen's Neovim Config](https://github.com/YilunAllenChen/nvim). Focuses on getting the most done with the least keystrokes, with soothing and minimalist aesthetics.
 
 ![image](https://github.com/YilunAllenChen/nvim/assets/32376517/1507021c-01d0-4ebc-a398-e65ccc83e133)
 ![image](https://github.com/YilunAllenChen/nvim/assets/32376517/c20fa6f3-8045-46df-a34f-daeed0f067a0)
