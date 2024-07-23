@@ -28,7 +28,7 @@ local function alpha_render()
       local stats = require("lazy").stats()
       local ms = math.floor(stats.startuptime * 100 + 0.5) / 100
       dashboard.section.footer.val =
-      { " ", " ", " ", "Allen's Neovim started up with " .. stats.count .. " plugins in " .. ms .. "ms" }
+      { " ", " ", " ", "Ezra's Neovim started up with " .. stats.count .. " plugins in " .. ms .. "ms" }
       dashboard.section.footer.opts.hl = "DashboardFooter"
       pcall(vim.cmd.AlphaRedraw)
     end,
