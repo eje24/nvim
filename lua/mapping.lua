@@ -172,8 +172,7 @@ M.set_mappings {
 
     -- Opening terminals
     ["<C-t>"] = { "<cmd>:terminal<cr>" },
-    ["t"] = { "<C-w>s<cmd>terminal<cr>a" },
-    ["T"] = { "<C-w>v<cmd>:terminal<cr>a" },
+    ["t"] = { ":terminal<cr>a" },
 
     -- window management & navigation
     ["\\"] = { "<C-w>v", desc = "Vertical Split" },
