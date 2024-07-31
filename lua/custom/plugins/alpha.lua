@@ -82,6 +82,7 @@ local function alpha_render()
     [[ bbbbb      aaaaajh ]],
     [[  bbbb       aaaaa  ]],
     [[                    ]],
+    [[                    ]],
     [[  aaaaaaaaabbbbbbb  ]],
   }))
 
