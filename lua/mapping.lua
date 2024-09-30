@@ -332,12 +332,10 @@ M.set_mappings {
 		function() require("nvim-window").pick() end,
         desc = "pick window"
     },
-
     ['<C-Left>'] = { function() require('smart-splits').resize_left() end, desc = "resize_left" },
     ['<C-Down>'] = { function() require('smart-splits').resize_down() end, desc = "resize_down" },
     ['<C-Up>'] = { function() require('smart-splits').resize_up() end, desc = "resize_up" },
     ['<C-Right>'] = { function() require('smart-splits').resize_right() end, desc = "resize_right" },
-
     -- moving between splits
     ['<C-h>'] = {
       function()
