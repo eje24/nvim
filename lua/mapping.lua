@@ -402,7 +402,6 @@ M.set_mappings {
   },
   i = {
     ['<C-d><C-b>'] = { 'import ipdb; ipdb.set_trace(context=5)', desc = 'debug' },
-<<<<<<< HEAD
     ['<C-p>'] = {
       '<esc>ggoimport pandas as pd<enter>import numpy as np<enter>import pyarrow as pa<enter>import fio.delta as delta<esc><C-o>i',
       desc = 'import the typicals',
@@ -413,8 +412,6 @@ M.set_mappings {
       end,
       desc = 'Format buffer',
     },
-=======
->>>>>>> c5c916e (/remove unused)
     ['<C-s>'] = { '<cmd>:w<cr>', desc = 'Save file' },
     ['<C-;>'] = { '<cmd>:HopWord<cr>', desc = 'Hop' },
     ['<C-e>'] = { '<esc>ldwi', desc = 'Erase word' },
